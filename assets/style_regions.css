@@ -1,0 +1,910 @@
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+.nav{
+	margin:auto;
+	width:1300px;
+	height:300px;
+	text-align:center;
+	border-right: 4px solid #FFAF36;
+	border-left: 4px solid #FFAF36;
+	border-radius:20px;
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+	background-image:url('../images/regions_header.jpg');
+	background-position: 42% 40%;
+background-repeat:no-repeat;
+background-position: center;
+}
+
+.heading{
+	list-style-type:none;
+	text-align:center;
+  padding-top:35px;
+  padding-left:0;
+  position:relative;
+}
+
+.heading li{
+	display:inline-block;
+	padding-left:25px;
+	padding-right:25px;
+	float:none;
+}
+
+/*-----------------------slider-menu block------------------------*/
+.heading li ul {
+	display:none;
+}
+
+.heading li:hover > ul{
+	display:block;
+}
+
+.heading li {
+	 line-height:50px; 
+}
+
+.heading li ul a {display:block;}
+
+.heading li ul li {
+	float:none; 
+	line-height:20px; 
+	width:inherit; 
+ padding:0;  margin:0; 
+}
+.heading li ul li:hover > a{
+	text-decoration: none;
+}
+
+.heading li ul{ position:absolute; top:100%; width:100px;
+ margin:0; padding:0; 
+ border-left:1px solid white;
+ border-right:1px solid white;
+ background-color:rgba(255,255,255,0.7);
+}
+/*----------------------the end of menu block--------------------------*/
+
+.heading a{
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+	text-decoration:none;
+	font-size:18px;
+	color:#000080;
+  }
+
+
+.heading a:hover{
+	text-decoration:underline;
+	animation-name:backgr;
+	animation-duration:0.5s;
+	animation-delay: 0s;
+  animation-iteration-count: 1;
+	animation-fill-mode:forwards;
+}
+ @keyframes backgr{
+ 	0%{color:#000080;}
+
+ 	75%{color:#000;}
+
+ 	100%{color:#000;}
+ } 
+ @-webkit-keyframes backgr{
+	0%{color:#000080;}
+
+ 	75%{color:#000;}
+
+ 	100%{color:#000;}
+}
+
+.allbutton{
+	border-radius:15px;
+	padding:12px;
+	background-color:transparent;
+	border-color: #000080;
+	font-size: 18px;
+	text-align: center;
+	color:#000080;
+	font-weight:bold;
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-family: 'Indie Flower', cursive;
+	-webkit-font-family: 'Roboto', sans-serif;
+}
+.allbutton:hover{
+	cursor:pointer;
+	box-shadow: 0 0 5px #1919FF;
+}
+
+.h_heading h1{
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-family: 'Indie Flower', cursive;
+	-webkit-font-family: 'Roboto', sans-serif;
+	font-size:50px;
+	font-weight:600;
+	color:#ffffff;
+	text-shadow: 0 0 5px #000;
+	-webkit-text-shadow: 0 0 5px #000;
+	text-align:center;
+	margin-top:70px;
+}
+
+/*--------------------------------------LIST OF REGIONS--------------------------------------------------------------*/
+
+/* Базовый контейнер табов */
+.tabs {
+	min-width: 320px;
+	max-width: 1300px;
+	padding-top: 10px;
+	margin: 0 auto;
+}
+/* Стили секций с содержанием */
+.tabs>section {
+	display: none;
+	padding: 5px;
+	background: #fff;
+	border: 1px solid #ddd;
+	margin:auto;
+}
+.tabs>section>div {
+	margin: 0 0 5px;
+	color: #383838;
+	/* прикрутим анимацию */
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+ 
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* Прячем чекбоксы */
+.tabs>input {
+	display: none;
+	position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs>label {
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 10px 4px;
+	font-weight: 600;
+	text-align: center;
+	color: #aaa;
+	border: 0px solid #ddd;
+	border-width: 1px 1px 1px 1px;
+	background: #f1f1f1;
+	border-radius: 3px 3px 0 0;
+}
+/* Шрифт-иконки от Font Awesome в формате Unicode */
+.tabs>label:before {
+	font-family: fontawesome;
+	font-weight: normal;
+	margin-right: 10px;
+}
+.tabs>label[for*="1"]:before {
+	content: "\f05a";
+}
+.tabs>label[for*="2"]:before {
+	content: "\f05a";
+}
+.tabs>label[for*="3"]:before {
+	content: "\f05a";
+}
+.tabs>label[for*="4"]:before {
+	content: "\f05a";
+}
+.tabs>label[for*="5"]:before {
+	content: "\f05a";
+}
+.tabs>label[for*="6"]:before {
+	content: "\f05a";
+}
+.tabs>label[for*="7"]:before {
+	content: "\f05a";
+}
+.tabs>label[for*="8"]:before {
+	content: "\f05a";
+}
+.tabs>label[for*="9"]:before {
+	content: "\f05a";
+}
+.tabs>label[for*="10"]:before {
+	content: "\f05a";
+}
+/* Изменения стиля переключателей вкладок при наведении */
+ 
+.tabs>label:hover {
+	color:  #00258E;
+	cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs>input:checked+label {
+	color: #555;
+	border-top: 2px solid #FFAF36;
+	border-bottom: 1px solid #fff;
+	background: #fff;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4,
+#tab5:checked~#content-tab5, #tab6:checked~#content-tab6, #tab7:checked~#content-tab7, #tab8:checked~#content-tab8,
+#tab9:checked~#content-tab9, #tab10:checked~#content-tab10 {
+	display: block;
+}
+/* Убираем текст с переключателей 
+* и оставляем иконки на малых экранах
+*/
+ 
+@media screen and (max-width: 1300px) {
+	.tabs>label {
+		font-size: 0;
+	}
+	.tabs>label:before {
+		margin: 0;
+		font-size: 18px;
+	}
+}
+/* Изменяем внутренние отступы 
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 680px) {
+	.tabs>label {
+		padding: 15px;
+	}
+}
+
+/*--------------------------------------TAB: GOLOSEEVO--------------------------------------------------------*/
+
+.heading1{
+	position:relative;
+	margin-bottom:2vh;
+  background-image:url('../images/regions/golos_header.jpg');
+	background-repeat:no-repeat;
+	background-position: 45% 30%;
+	height: 300px;
+	max-width: 1300px;
+}
+
+.crest{
+	position:absolute;
+	top:50px;
+	right:50px;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+}
+
+
+.heading1 p{
+	margin-top:0.2ex;
+	padding-top:60px;
+	font-family: 'Monotype Corsiva', cursive;
+	-webkit-font-family: 'Monotype Corsiva', cursive;
+	font-size:12ex;
+	color:white;
+	text-align:center;
+	text-shadow: 0 0 7px #000;
+	-webkit-text-shadow: 0 0 7px #000;
+}
+
+/**********************Short info********************************/
+
+#info1{
+	list-style-type:none;
+	text-align:center;
+	margin: 0 ;
+	padding:0;
+}
+
+#info1 li{
+	display:inline-block;
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-family: 'Indie Flower', cursive;
+	-webkit-font-family: 'Roboto', sans-serif;
+	font-size:2ex;
+	line-height:4ex;  
+	padding-left:6.5vw;
+	padding-right:6.5vw;
+	border-right:2px solid  #00258E;
+}
+
+.first_str1{
+	border-left:2px solid  #00258E;
+}
+
+/*----------------------Overvall info----------------------------*/
+
+h2{
+	font-family: 'Monotype Corsiva', cursive;
+	-webkit-font-family: 'Monotype Corsiva', cursive;
+	text-align:center;
+	font-size:6ex; 
+	margin-bottom:0;
+	margin-top:7vh;
+}
+
+#over_info{
+	margin-bottom:10vh;
+}
+
+#over_info p{
+	font-style:normal;
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-family: 'Indie Flower', cursive;
+	-webkit-font-family: 'Roboto', sans-serif;
+	margin-left:8vw;
+	margin-right:8vw;
+	padding-left:2vw;
+	padding-right:2vw;
+	font-size:2ex;
+	border-left: 2px solid  #FFAF36;
+	border-right:2px solid  #FFAF36 ;
+	line-height:1.4;
+}
+
+.info_img1{
+	list-style-type:none;
+	text-align:center;
+	padding:0;
+	margin-top:4vh;
+	margin-bottom:7vh;
+}
+
+.info_img1 li{
+	display:inline-block;
+}
+
+.info_img1 li img{
+	height:30vh;
+}
+
+.info_img2{
+	list-style-type:none;
+	text-align:center;
+	padding:0;
+	margin-top:4vh;
+	margin-bottom:7vh;
+}
+
+.info_img2 li{
+	display:inline-block;
+}
+
+.info_img2 li img{
+	height:29vh;
+}
+
+/*----------------------HISTORY---------------------------------*/
+
+h3{
+	font-size:6ex;
+	text-align:center;
+	font-family: 'Monotype Corsiva', cursive;
+	-webkit-font-family: 'Monotype Corsiva', cursive;
+	margin:0;
+}
+
+#history{
+	margin-bottom:8vh;
+}
+
+#history .img1{
+text-align:center;
+}
+
+#history p{
+	font-style:normal;
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-family: 'Indie Flower', cursive;
+	-webkit-font-family: 'Roboto', sans-serif;
+	margin-left:8vw;
+	margin-right:8vw;
+	padding-left:2vw;
+	padding-right:2vw;
+	font-size:2ex;
+	border-left: 2px solid  #FFAF36;
+	border-right:2px solid  #FFAF36 ;
+	line-height:1.4;
+}
+
+#history figcaption{
+	font-size:2.5ex;
+	font-family: 'Monotype Corsiva', cursive;
+	-webkit-font-family: 'Monotype Corsiva', cursive;
+	text-align:center;
+	margin-bottom:7vh; 
+}
+
+#history figure{
+	text-align:center;
+}
+
+/*-------------------------TRAVEL---------------------------------*/
+
+h4{
+	font-size:6ex;
+	text-align:center;
+	font-family: 'Monotype Corsiva', cursive;
+	-webkit-font-family: 'Monotype Corsiva', cursive;
+	margin-top:5vh;
+	margin-bottom:0;
+	line-height:0.2; 
+}
+
+.txt_link{
+	font-family: 'Monotype Corsiva', cursive;
+	-webkit-font-family: 'Monotype Corsiva', cursive;
+	text-align:center;
+	font-size:2.5ex;
+}
+
+.travel{
+	font-style:normal;
+	list-style-type:none;
+	text-align:left;
+	margin-left:8vw;
+	margin-right:8vw;
+	padding-left:0;
+	padding-right:0;
+}
+
+.travel li{
+	display:inline-block;
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-family: 'Indie Flower', cursive;
+	-webkit-font-family: 'Roboto', sans-serif;
+	font-size:2ex;
+	line-height:4ex;
+	margin-top:0; 
+}
+
+.travel li a {
+  text-decoration:none;
+  font-size:2ex;
+  color:#00258E;
+}
+
+/*------------------------DARNITSKIY TAB------------------------*/
+
+.heading2{
+	position:relative;
+	margin-bottom:2vh;
+  background-image:url('../images/regions/dar_header.jpg');
+	background-repeat:no-repeat;
+	background-position: 45% 30%;
+	height: 300px;
+	max-width: 1300px
+}
+
+.crest2{
+	position:absolute;
+	top:50px;
+	right:50px;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+}
+
+
+.heading2 p{
+	padding-top:60px;
+	margin-top:0.2ex;
+	font-family: 'Monotype Corsiva', cursive;
+	-webkit-font-family: 'Monotype Corsiva', cursive;
+	font-size:12ex;
+	color:white;
+	text-align:center;
+	text-shadow: 0 0 7px #000;
+	-webkit-text-shadow: 0 0 7px #000;
+}
+
+/*-----------------------SHORT INFO--------------------------*/
+
+#info2{
+	list-style-type:none;
+	text-align:center;
+	margin: 0 ;
+	padding:0;
+}
+
+#info2 li{
+	display:inline-block;
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-family: 'Indie Flower', cursive;
+	-webkit-font-family: 'Roboto', sans-serif;
+	font-size:2ex;
+	line-height:4ex;  
+	padding-left:6.5vw;
+	padding-right:6.5vw;
+	border-right:2px solid  #00258E;
+}
+
+.first_str2{
+	border-left:2px solid  #00258E;
+}
+
+/*-------------------------Overvall info---------------------*/
+
+#over_info{
+	margin-bottom:10vh;
+}
+
+#over_info p{
+	font-style:normal;
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-family: 'Indie Flower', cursive;
+	-webkit-font-family: 'Roboto', sans-serif;
+	margin-left:8vw;
+	margin-right:8vw;
+	padding-left:2vw;
+	padding-right:2vw;
+	font-size:2ex;
+	border-left: 2px solid  #FFAF36;
+	border-right:2px solid  #FFAF36 ;
+	line-height:1.4;
+}
+
+#over_info figure{
+	text-align:center;
+}
+
+#over_info figcaption{
+font-size:2.5ex;
+font-family: 'Monotype Corsiva', cursive;
+-webkit-font-family: 'Monotype Corsiva', cursive;
+text-align:center;
+margin-bottom:7vh;
+}
+
+/*--------------------HISTORY---------------------------*/
+
+.hist_p1{
+	font-style:oblique;
+  border:2px solid #FFAF36;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 0;
+	font-family: 'Monotype Corsiva', cursive;
+	-webkit-font-family: 'Monotype Corsiva', cursive;
+	font-size:3.5ex;
+	padding:2%;
+	margin-bottom:7vh;
+}
+
+#dar_history p{
+	font-style:normal;
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-family: 'Indie Flower', cursive;
+	-webkit-font-family: 'Roboto', sans-serif;
+	margin-left:8vw;
+	margin-right:8vw;
+	padding-left:2vw;
+	padding-right:2vw;
+	font-size:2ex;
+	border-left: 2px solid  #FFAF36;
+	border-right:2px solid  #FFAF36 ;
+	line-height:1.4;
+}
+
+#dar_history figure{
+	text-align:center;
+}
+
+#dar_history figcaption{
+font-size:2.5ex;
+font-family: 'Monotype Corsiva', cursive;
+-webkit-font-family: 'Monotype Corsiva', cursive;
+text-align:center;
+margin-bottom:7vh;
+}
+
+.dar_img3-4{
+	list-style-type:none;
+	text-align:center;
+	padding:0;
+	margin-top:4vh;
+	margin-bottom:7vh;
+}
+
+.dar_img3-4 li{
+	display:inline-block;
+}
+
+.dar_img3-4 li img{
+	height:51vh;
+}
+
+/*------------TRAVEL-----------------------------*/
+
+.txt_link{
+	font-family: 'Monotype Corsiva', cursive;
+	-webkit-font-family: 'Monotype Corsiva', cursive;
+	text-align:center;
+	font-size:2.5ex;
+}
+
+.g_travel{
+	font-style:normal;
+	list-style-type:none;
+	text-align:left;
+}
+
+.g_travel li{
+	display:inline-block;
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-family: 'Indie Flower', cursive;
+	-webkit-font-family: 'Roboto', sans-serif;
+	font-size:2ex;
+	line-height:4ex;
+	margin-top:0; 
+}
+
+.g_travel li a {
+  text-decoration:none;
+  font-size:2ex;
+  color:#00258E;
+}
+
+/*----------------------DESNA TAB-------------------------*/
+
+.heading3{
+	position:relative;
+	margin-bottom:2vh;
+  background-image:url('../images/regions/des_example4.jpg');
+  background-size:1300px; 
+	background-repeat:no-repeat;
+	background-position: 0% 52%;
+	height: 300px;
+	max-width: 1300px
+}
+
+.crest3{
+	position:absolute;
+	top:50px;
+	right:50px;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+}
+
+
+.heading3 p{
+	margin-top:0.2ex;
+	padding-top:60px;
+	font-family: 'Monotype Corsiva', cursive;
+	-webkit-font-family: 'Monotype Corsiva', cursive;
+	font-size:12ex;
+	color:white;
+	text-align:center;
+	text-shadow: 0 0 7px #000;
+	-webkit-text-shadow: 0 0 7px #000;
+}
+
+/*----------------Short info (restricted)----------------*/
+
+/*-----------------Overvall info-----------------------*/
+
+
+.des_img-info{
+	list-style-type:none;
+	text-align:center;
+	padding:0;
+	margin-top:4vh;
+	margin-bottom:7vh;
+}
+
+.des_img-info li{
+	display:inline-block;
+}
+
+.des_img-info li img{
+	height:47vh;
+}
+
+/*----------------------------DNIPRO TAB-------------------*/
+
+.dnipro_img-info{
+	list-style-type:none;
+	text-align:center;
+	margin-top:4vh;
+	margin-bottom:7vh;
+	padding-left:6.5vw;
+	padding-right:6.5vw;
+}
+
+.dnipro_img-info li{
+	display:inline-block;
+}
+
+.dnipro_img-info li img{
+	height:41vh;
+}
+
+
+
+/*--------------------HISTORY--------------------*/
+.txt_link{
+	font-family: 'Monotype Corsiva', cursive;
+	-webkit-font-family: 'Monotype Corsiva', cursive;
+	text-align:center;
+	font-size:2.5ex;
+}
+
+.dnipro_hist-info{
+	list-style-type:none;
+	text-align:center;
+	margin-top:4vh;
+	margin-bottom:7vh;
+	padding-left:6.5vw;
+	padding-right:6.5vw;
+}
+
+.dnipro_hist-info li{
+	display:inline-block;
+}
+
+.dnipro_hist-info li img{
+	height:45vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------FOOTER------------------------------------*/
+footer{
+	
+	border-top:6px double #00258E;
+	border-left:5px solid #00258E;
+	border-right:5px solid #00258E;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	padding-top:15px;
+	margin-top:35px;
+	margin-left: auto;
+	margin-right: auto;
+	width:1220px;
+	height:260px;
+ /* background-image:url('../images/footer_city6.jpg');
+	background-position:50% 50%;
+	background-size:auto auto; */
+	 display: block;
+  position: relative;
+}
+
+footer::after {
+  content: "";
+  background: url('../images/footer_city6.jpg');
+  background-position:40% 45%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index:-1;   
+}
+
+
+#social{
+	margin-left:20px;
+}
+
+#social img{
+	width:50px;
+	height:50px;
+	margin-right:20px;
+}
+
+#social h6{
+	font-size:20px;
+	font-style:normal; 
+	font-weight:600; 
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+	margin-top:0;
+	margin-bottom:2vh;
+}
+
+#social img:hover {opacity:0.75;}
+
+#contacts{
+	font-size:25px;
+	margin-top:25px;
+	margin-bottom:40px;
+	width:1200px;
+	text-align:center;
+	visibility:hidden;
+	}
+
+#contacts a{
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+	text-decoration:none;
+	margin-left:20px;
+	margin-right:20px;
+	padding:5px;
+	}
+
+	#contacts a:hover{
+		text-decoration:underline;
+	}
+	
+.last_str{
+	color:#fff;
+	list-style-type:none;
+	padding-top:4.5vh;
+}
+
+.last_str li{
+	font-style:normal; 
+	display:inline-block;
+  font-family: 'Indie Flower', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-size:16px; 
+}
+
+#b{float: right; margin-right:20px;}
+
+/*----------------------DNIPRO TAB-------------------------*/
+
+.heading4{
+	position:relative;
+	margin-bottom:2vh;
+  background-image:url('../images/regions/dnipro_header.jpg');
+  background-size:1300px; 
+	background-repeat:no-repeat;
+	background-position: 0% 9%;
+	height: 300px;
+	max-width: 1300px
+}
+
+.crest4{
+	position:absolute;
+	top:50px;
+	right:50px;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+}
+
+
+.heading4 p{
+	margin-top:0.2ex;
+	padding-top:60px;
+	font-family: 'Monotype Corsiva', cursive;
+	-webkit-font-family: 'Monotype Corsiva', cursive;
+	font-size:12ex;
+	color:white;
+	text-align:center;
+	text-shadow: 0 0 7px #000;
+	-webkit-text-shadow: 0 0 7px #000;
+}
